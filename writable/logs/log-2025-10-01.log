@@ -1,0 +1,371 @@
+DEBUG - 2025-10-01 05:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-01 05:30:34 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: users/update]
+in SYSTEMPATH\BaseModel.php on line 1008.
+ 1 SYSTEMPATH\BaseModel.php(1008): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\AuthController.php(228): CodeIgniter\Model->update('59', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->updateField()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-10-01 05:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 05:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 06:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-01 07:44:10 --> mysqli_sql_exception: Unknown column 'employeedetails' in 'field list' in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp new\htdocs\active\app\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', Array)
+#6 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+#7 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#13 {main}
+CRITICAL - 2025-10-01 07:44:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'employeedetails' in 'field list'
+[Method: POST, Route: addmodal]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :employeedetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 2 APPPATH\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-10-01 07:44:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'employeedetails' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :employeedetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 4 APPPATH\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-10-01 07:44:10 --> [Caused by] mysqli_sql_exception: Unknown column 'employeedetails' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :employeedetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 5 APPPATH\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-10-01 07:48:13 --> mysqli_sql_exception: Unknown column 'employeedetails' in 'field list' in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp new\htdocs\active\app\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', Array)
+#6 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+#7 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#13 {main}
+CRITICAL - 2025-10-01 07:48:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'employeedetails' in 'field list'
+[Method: POST, Route: addmodal]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :employeedetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 2 APPPATH\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-10-01 07:48:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'employeedetails' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :employeedetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 4 APPPATH\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-10-01 07:48:13 --> [Caused by] mysqli_sql_exception: Unknown column 'employeedetails' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :employeedetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 5 APPPATH\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-10-01 07:49:56 --> mysqli_sql_exception: Unknown column 'employeedetails' in 'field list' in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp new\htdocs\active\app\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', Array)
+#6 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+#7 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#13 {main}
+CRITICAL - 2025-10-01 07:49:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'employeedetails' in 'field list'
+[Method: POST, Route: addmodal]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :employeedetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 2 APPPATH\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-10-01 07:49:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'employeedetails' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :employeedetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 4 APPPATH\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-10-01 07:49:56 --> [Caused by] mysqli_sql_exception: Unknown column 'employeedetails' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', \'gh\', \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `employeedetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :employeedetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 5 APPPATH\Models\Ex.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AuthController.php(326): App\Models\Ex->insertTable('users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-10-01 07:52:27 --> mysqli_sql_exception: Column 'empdetails' cannot be null in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp new\htdocs\active\app\Models\UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(326): App\Models\UserModel->insertTable('users', Array)
+#6 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+#7 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#13 {main}
+CRITICAL - 2025-10-01 07:52:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'empdetails' cannot be null
+[Method: POST, Route: addmodal]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :empdetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 2 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AuthController.php(326): App\Models\UserModel->insertTable('users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-10-01 07:52:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'empdetails' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', NULL, \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', NULL, \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :empdetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 4 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\AuthController.php(326): App\Models\UserModel->insertTable('users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-10-01 07:52:27 --> [Caused by] mysqli_sql_exception: Column 'empdetails' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', NULL, \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', NULL, \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', NULL, \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :empdetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 5 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AuthController.php(326): App\Models\UserModel->insertTable('users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-10-01 07:52:43 --> mysqli_sql_exception: Column 'empdetails' cannot be null in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp new\htdocs\active\app\Models\UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(326): App\Models\UserModel->insertTable('users', Array)
+#6 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+#7 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#13 {main}
+CRITICAL - 2025-10-01 07:52:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'empdetails' cannot be null
+[Method: POST, Route: addmodal]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :empdetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 2 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\AuthController.php(326): App\Models\UserModel->insertTable('users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-10-01 07:52:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'empdetails' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', NULL, \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', NULL, \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :empdetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 4 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\AuthController.php(326): App\Models\UserModel->insertTable('users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-10-01 07:52:43 --> [Caused by] mysqli_sql_exception: Column 'empdetails' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', NULL, \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', NULL, \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (\'nh\', \'codeigniter developer\', NULL, \'gfht\', \'hgtrh\', \'nhj\', \'8657839822\', \'jn\', \'yhjj\', \'jk\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`employee`, `skills`, `empdetails`, `role`, `gender`, `qualification`, `phone`, `computerskills`, `experience`, `otherskills`) VALUES (:employee:, :skills:, :empdetails:, :role:, :gender:, :qualification:, :phone:, :computerskills:, :experience:, :otherskills:)', [...], false)
+ 5 APPPATH\Models\UserModel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\AuthController.php(326): App\Models\UserModel->insertTable('users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->addmodal()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-10-01 11:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 11:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 11:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 11:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 11:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 11:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 11:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 11:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 11:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 12:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-01 13:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

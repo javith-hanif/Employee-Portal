@@ -1,0 +1,515 @@
+ERROR - 2025-09-27 07:43:11 --> mysqli_sql_exception: Table 'act.users' doesn't exist in engine in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp new\htdocs\active\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp new\htdocs\active\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp new\htdocs\active\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->store()
+#9 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#15 {main}
+CRITICAL - 2025-09-27 07:43:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'act.users' doesn't exist in engine
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 07:43:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'act.users' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javithhanif732@gmail.com\', \'anas\', \'no\', \'efc6bb97fa5e78f3fbd5e475a9b7323c\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javithhanif732@gmail.com\', \'anas\', \'no\', \'efc6bb97fa5e78f3fbd5e475a9b7323c\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 07:43:11 --> [Caused by] mysqli_sql_exception: Table 'act.users' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javithhanif732@gmail.com\', \'anas\', \'no\', \'efc6bb97fa5e78f3fbd5e475a9b7323c\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javithhanif732@gmail.com\', \'anas\', \'no\', \'efc6bb97fa5e78f3fbd5e475a9b7323c\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javithhanif732@gmail.com\', \'anas\', \'no\', \'efc6bb97fa5e78f3fbd5e475a9b7323c\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-09-27 09:03:11 --> mysqli_sql_exception: Unknown column 'active_status' in 'field list' in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp new\htdocs\active\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp new\htdocs\active\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp new\htdocs\active\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->store()
+#9 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#15 {main}
+CRITICAL - 2025-09-27 09:03:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'active_status' in 'field list'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 09:03:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'active_status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javithhanif732@gmail.com\', \'aram\', \'no\', \'9a959f6f41367882a6120009aa8bdff5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javithhanif732@gmail.com\', \'aram\', \'no\', \'9a959f6f41367882a6120009aa8bdff5\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 09:03:11 --> [Caused by] mysqli_sql_exception: Unknown column 'active_status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javithhanif732@gmail.com\', \'aram\', \'no\', \'9a959f6f41367882a6120009aa8bdff5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javithhanif732@gmail.com\', \'aram\', \'no\', \'9a959f6f41367882a6120009aa8bdff5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javithhanif732@gmail.com\', \'aram\', \'no\', \'9a959f6f41367882a6120009aa8bdff5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-09-27 09:45:20 --> mysqli_sql_exception: Unknown column 'active_status' in 'field list' in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp new\htdocs\active\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp new\htdocs\active\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp new\htdocs\active\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->store()
+#9 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#15 {main}
+CRITICAL - 2025-09-27 09:45:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'active_status' in 'field list'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 09:45:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'active_status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javith0617@gmail.com\', \'jaa\', \'no\', \'95080371f6a5e0f1cb461f2056a4818a\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javith0617@gmail.com\', \'jaa\', \'no\', \'95080371f6a5e0f1cb461f2056a4818a\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 09:45:20 --> [Caused by] mysqli_sql_exception: Unknown column 'active_status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javith0617@gmail.com\', \'jaa\', \'no\', \'95080371f6a5e0f1cb461f2056a4818a\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javith0617@gmail.com\', \'jaa\', \'no\', \'95080371f6a5e0f1cb461f2056a4818a\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javith0617@gmail.com\', \'jaa\', \'no\', \'95080371f6a5e0f1cb461f2056a4818a\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-09-27 10:12:03 --> mysqli_sql_exception: Unknown column 'active_status' in 'field list' in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp new\htdocs\active\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp new\htdocs\active\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp new\htdocs\active\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(28): CodeIgniter\Model->insert(Array)
+#8 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->store()
+#9 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#15 {main}
+CRITICAL - 2025-09-27 10:12:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'active_status' in 'field list'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 10:12:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'active_status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javith0617@gmail.com\', \'ddd\', \'no\', \'3a4b4c60dea835193407baa7dfbbb217\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javith0617@gmail.com\', \'ddd\', \'no\', \'3a4b4c60dea835193407baa7dfbbb217\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 10:12:03 --> [Caused by] mysqli_sql_exception: Unknown column 'active_status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javith0617@gmail.com\', \'ddd\', \'no\', \'3a4b4c60dea835193407baa7dfbbb217\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javith0617@gmail.com\', \'ddd\', \'no\', \'3a4b4c60dea835193407baa7dfbbb217\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (\'javith0617@gmail.com\', \'ddd\', \'no\', \'3a4b4c60dea835193407baa7dfbbb217\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`, `active_status`, `token`) VALUES (:email:, :password:, :active_status:, :token:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->store()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-09-27 10:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-27 10:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-27 10:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-27 10:49:12 --> mysqli_sql_exception: Table 'hel.act' doesn't exist in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `act` SE...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `act` SE...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `act` SE...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `act` SE...', Array, false)
+#4 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+#6 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#7 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#12 {main}
+CRITICAL - 2025-09-27 10:49:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hel.act' doesn't exist
+[Method: POST, Route: users/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `act` SET `details` = :details:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 10:49:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hel.act' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `act` SET `details` = \'aj\'
+WHERE `id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `act` SET `details` = \'aj\'
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `act` SET `details` = :details:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 10:49:12 --> [Caused by] mysqli_sql_exception: Table 'hel.act' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `act` SET `details` = \'aj\'
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `act` SET `details` = \'aj\'
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `act` SET `details` = \'aj\'
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `act` SET `details` = :details:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-09-27 10:49:34 --> mysqli_sql_exception: Table 'hel.act' doesn't exist in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `act` SE...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `act` SE...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `act` SE...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `act` SE...', Array, false)
+#4 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+#6 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#7 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#12 {main}
+CRITICAL - 2025-09-27 10:49:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hel.act' doesn't exist
+[Method: POST, Route: users/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `act` SET `skills` = :skills:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 10:49:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hel.act' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `act` SET `skills` = \'m, jb\'
+WHERE `id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `act` SET `skills` = \'m, jb\'
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `act` SET `skills` = :skills:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 10:49:34 --> [Caused by] mysqli_sql_exception: Table 'hel.act' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `act` SET `skills` = \'m, jb\'
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `act` SET `skills` = \'m, jb\'
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `act` SET `skills` = \'m, jb\'
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `act` SET `skills` = :skills:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-09-27 10:53:46 --> mysqli_sql_exception: Table 'hel.hel' doesn't exist in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `hel` SE...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `hel` SE...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `hel` SE...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `hel` SE...', Array, false)
+#4 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+#6 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#7 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#12 {main}
+CRITICAL - 2025-09-27 10:53:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hel.hel' doesn't exist
+[Method: POST, Route: users/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `hel` SET `skills` = :skills:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 10:53:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hel.hel' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `hel` SET `skills` = \'m, jb\'
+WHERE `id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `hel` SET `skills` = \'m, jb\'
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `hel` SET `skills` = :skills:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 10:53:46 --> [Caused by] mysqli_sql_exception: Table 'hel.hel' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `hel` SET `skills` = \'m, jb\'
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `hel` SET `skills` = \'m, jb\'
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `hel` SET `skills` = \'m, jb\'
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `hel` SET `skills` = :skills:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-09-27 10:53:51 --> mysqli_sql_exception: Table 'hel.hel' doesn't exist in C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp new\htdocs\active\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `hel` SE...', 0)
+#1 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `hel` SE...')
+#2 C:\xampp new\htdocs\active\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `hel` SE...')
+#3 C:\xampp new\htdocs\active\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `hel` SE...', Array, false)
+#4 C:\xampp new\htdocs\active\app\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp new\htdocs\active\system\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+#6 C:\xampp new\htdocs\active\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#7 C:\xampp new\htdocs\active\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp new\htdocs\active\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp new\htdocs\active\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp new\htdocs\active\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp new\htdocs\active\system\rewrite.php(44): require_once('C:\\xampp new\\ht...')
+#12 {main}
+CRITICAL - 2025-09-27 10:53:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hel.hel' doesn't exist
+[Method: POST, Route: users/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `hel` SET `empdetails` = :empdetails:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 10:53:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hel.hel' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `hel` SET `empdetails` = \'Train\'
+WHERE `id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `hel` SET `empdetails` = \'Train\'
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `hel` SET `empdetails` = :empdetails:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-27 10:53:51 --> [Caused by] mysqli_sql_exception: Table 'hel.hel' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `hel` SET `empdetails` = \'Train\'
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `hel` SET `empdetails` = \'Train\'
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `hel` SET `empdetails` = \'Train\'
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `hel` SET `empdetails` = :empdetails:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\AuthController.php(191): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->clickupdate()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')

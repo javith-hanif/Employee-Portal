@@ -1,0 +1,311 @@
+CRITICAL - 2025-09-25 08:46:41 --> ErrorException: Undefined array key "active_status"
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 76.
+ 1 APPPATH\Controllers\AuthController.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "active_status"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AuthController.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-09-25 08:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-25 08:49:35 --> ErrorException: Undefined array key "active_status"
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 76.
+ 1 APPPATH\Controllers\AuthController.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "active_status"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AuthController.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+ERROR - 2025-09-25 08:54:26 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-09-25 08:54:26 --> 220 smtp.gmail.com ESMTP 98e67ed59e1d1-3341bd90587sm5002554a91.6 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2406:7400:ca:d5a5:e8cb:6b45:a62:f66f]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2406:7400:ca:d5a5:e8cb:6b45:a62:f66f]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 
+The following SMTP error was encountered: 
+quit: 250 2.1.0 OK 98e67ed59e1d1-3341bd90587sm5002554a91.6 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK 98e67ed59e1d1-3341bd90587sm5002554a91.6 - gsmtp
+
+DEBUG - 2025-09-25 08:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-25 08:58:11 --> ErrorException: Undefined array key "active_status"
+[Method: GET, Route: log]
+in APPPATH\Controllers\AuthController.php on line 76.
+ 1 APPPATH\Controllers\AuthController.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "active_status"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AuthController.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-09-25 09:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 09:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-25 09:51:27 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\EmployeeModel::insertTable
+[Method: POST, Route: resultboard]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\EmployeeController.php(21): CodeIgniter\Model->__call('insertTable', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmployeeController->resultboard()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 09:51:27 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\EmployeeModel::insertTable
+[Method: POST, Route: resultboard]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\EmployeeController.php(21): CodeIgniter\Model->__call('insertTable', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmployeeController->resultboard()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 10:37:36 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin]
+in APPPATH\Views\admin.php on line 13.
+ 1 APPPATH\Views\admin.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'C:\\xampp new\\htdocs\\active\\app\\Views\\admin.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp new\\htdocs\\active\\app\\Views\\admin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH\Controllers\EmployeeController.php(31): view('admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmployeeController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 11:36:43 --> Error: Class "APP\Models\AdLogModel" not found
+[Method: GET, Route: log]
+in APPPATH\Controllers\AdLogController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdLogController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdLogController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 11:39:31 --> Error: Class "APP\Models\AdLogModel" not found
+[Method: GET, Route: log]
+in APPPATH\Controllers\AdLogController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdLogController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdLogController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 11:39:32 --> Error: Class "APP\Models\AdLogModel" not found
+[Method: GET, Route: log]
+in APPPATH\Controllers\AdLogController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdLogController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdLogController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 11:39:32 --> Error: Class "APP\Models\AdLogModel" not found
+[Method: GET, Route: log]
+in APPPATH\Controllers\AdLogController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdLogController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdLogController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 11:41:30 --> ErrorException: Undefined array key "username"
+[Method: GET, Route: log]
+in APPPATH\Controllers\AdLogController.php on line 17.
+ 1 APPPATH\Controllers\AdLogController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AdLogController.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdLogController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdLogController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 11:41:32 --> ErrorException: Undefined array key "username"
+[Method: GET, Route: log]
+in APPPATH\Controllers\AdLogController.php on line 17.
+ 1 APPPATH\Controllers\AdLogController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AdLogController.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdLogController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdLogController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 11:41:33 --> ErrorException: Undefined array key "username"
+[Method: GET, Route: log]
+in APPPATH\Controllers\AdLogController.php on line 17.
+ 1 APPPATH\Controllers\AdLogController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AdLogController.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdLogController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdLogController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 11:41:33 --> ErrorException: Undefined array key "username"
+[Method: GET, Route: log]
+in APPPATH\Controllers\AdLogController.php on line 17.
+ 1 APPPATH\Controllers\AdLogController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AdLogController.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdLogController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdLogController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 12:10:05 --> ErrorException: Undefined array key "username"
+[Method: GET, Route: log]
+in APPPATH\Controllers\AdLogController.php on line 17.
+ 1 APPPATH\Controllers\AdLogController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AdLogController.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdLogController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdLogController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+CRITICAL - 2025-09-25 12:14:50 --> ErrorException: Undefined array key "username"
+[Method: GET, Route: log]
+in APPPATH\Controllers\AdLogController.php on line 17.
+ 1 APPPATH\Controllers\AdLogController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AdLogController.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdLogController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdLogController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-09-25 12:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-25 12:42:49 --> ErrorException: Undefined array key "active_status"
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 77.
+ 1 APPPATH\Controllers\AuthController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "active_status"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AuthController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-09-25 12:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-25 12:48:21 --> ErrorException: Undefined variable $users
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 77.
+ 1 APPPATH\Controllers\AuthController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AuthController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-09-25 12:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-25 12:50:53 --> ParseError: syntax error, unexpected token "else"
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 86.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp new\\htdocs\\active\\app\\Controllers\\AuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AuthController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\AuthController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-09-25 12:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 12:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-25 13:17:12 --> Error: Cannot use object of type App\Models\UserModel as array
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-09-25 13:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-25 13:22:04 --> ErrorException: Undefined array key "active_status"
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 77.
+ 1 APPPATH\Controllers\AuthController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "active_status"', 'C:\\xampp new\\htdocs\\active\\app\\Controllers\\AuthController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-09-25 13:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-25 13:37:51 --> ArgumentCountError: Too few arguments to function App\Controllers\AuthController::authenticate(), 0 passed in C:\xampp new\htdocs\active\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: login]
+in APPPATH\Controllers\AuthController.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->authenticate()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp new\\htdocs\\active\\public\\index.php')
+DEBUG - 2025-09-25 13:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 13:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 14:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 14:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 14:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-25 14:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
