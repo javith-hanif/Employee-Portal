@@ -18,9 +18,10 @@
         <p class="navbar-brand"><a href="<?= base_url('landingpage')?>" class="text-black text-decoration-none">Employee Portal</a>|personal details</p>
       </div>
 </nav>  
+<div class="container mt-2">
 <div class="row">
-        <div class="col-8 mx-auto">
-            <div class="card mt-2">
+        <div class="col-12 col-md-8 mx-auto">
+            <div class="card">
                     <div class="card-body">
                         <h2>personal details</h2>
 <form method="post" action="<?= base_url('personaldetails/update') ?>">
@@ -42,6 +43,7 @@
     </div>
     <button type="submit" class="btn btn-success mb-2">Submit</button>
 </form>
+</div>
 </div>
 </div>
 </div>

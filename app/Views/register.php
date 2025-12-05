@@ -19,9 +19,10 @@
         <p class="navbar-brand"><a href="<?= base_url('landingpage')?>" class="text-black text-decoration-none">Employee Portal</a>|User Sign Up</p>
       </div>
 </nav>  
+<div class="container mt-2">
 <div class="row">
-        <div class="col-8 mx-auto">
-            <div class="card mt-2">
+        <div class="col-sm-12 col-md-8 mx-auto">
+            <div class="card">
                     <div class="card-body">
                         <h2>Register</h2>
 <form method="post" action="<?= base_url('register') ?>">
@@ -41,7 +42,7 @@
 </div>
 </div>
 </div>
-
+</div>
 
 </body>
 </html>

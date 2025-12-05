@@ -8,6 +8,7 @@
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
+
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -26,8 +27,8 @@
         gap: 12px; 
     }
 </style>
-    <div class="row flex-md-nowrap">
-        <div class="col-2 col-md-2">
+    <div class="row">
+        <div class="col-2">
          <nav class="navbar bg-body-secondary h">
           <div class="container p-2">
            <p class="navbar-brand am">
@@ -129,8 +130,8 @@
   </div>
 </div>
 
-<div class="col-12 col-md-10 mt-3 table-responsive">
-<table id="usersTable" class="display table table-bordered w-100">
+<div class="col-10 mt-3">
+<table id="usersTable" class="display table table-bordered">
     <thead>
         <tr>
             <th class="bg-success" scope="col">Id</th>
@@ -145,7 +146,6 @@
             <th class="bg-success" scope="col">experience</th>
             <th class="bg-success" scope="col">otherskills</th>
             <th class="bg-success" scope="col">date_time</th>
-
             <th class="bg-success" scope="col">Action</th>
         </tr>  
     </thead>
@@ -164,7 +164,7 @@
                 <td class="computerskills-col editable"  data-field="computerskills"><?= esc($rices['computerskills']) ?></td>
                 <td class="experience-col editable"  data-field="experience"><?= esc($rices['experience']) ?></td>
                 <td class="otherskills-col editable"  data-field="otherskills"><?= esc($rices['otherskills']) ?></td>  
-                <td><?= esc($rices['reg_date']) ?></td>
+                <td><?=  esc($rices['reg_date']) ?></td>
                 <td style="display: flex; gap:5px;">      
                     <button class="btn btn-warning btn-sm view" style="width: 100px;" data-id="<?= esc($rices['id']) ?>">View Details</button>          
                     <button class="btn btn-success btn-sm viewBtn" style="width: 100px;" data-id="<?= esc($rices['id']) ?>">View Skills</button>  
@@ -330,7 +330,9 @@ $(document).ready(function() {
 });
 */
 $(document).ready(function() {
-    var table=$('#usersTable').DataTable();
+    var table=$('#usersTable').DataTable({
+        responsive:true
+    });
      $(document).on("click", ".addBtn", function() {
         let row = $(this).closest("tr");
 

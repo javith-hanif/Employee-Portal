@@ -55,7 +55,7 @@ class AuthController extends Controller
     {
         $model = new UserModel();
         $user  = $model->where('token', $token)->first();
-        if ($user) {
+        if ($user){
             $model->update($user['id'], ['active_status' => 'yes']);
            return redirect()->to('login');
         } else {
@@ -108,10 +108,9 @@ class AuthController extends Controller
         $data['user'] = $model->find($id);
         return view('employee_edit', $data);
     }
-        
     public function update()
     {
-        $id = session()->get('user_id'); 
+        $id = $this->request->getPost('id'); 
         $model = new UserModel();
         $data = [
             'employee'     => $this->request->getPost('employee'),
@@ -121,7 +120,6 @@ class AuthController extends Controller
         $model->update($id, $data);
         return redirect()->to('/personaldetails/edit');
     }
-    
      public function detailedit()
     {
         $id = session()->get('user_id'); 
@@ -202,7 +200,7 @@ class AuthController extends Controller
         $user = $model->where('username', $username)->first();
         $pass = $model->where('password', $password)->first();
         if($user && $pass){
-             if($user['active_status'] === 'ad')
+             if($pass['active_status'] === 'ad')
             {
                 /*
                 $session->set([

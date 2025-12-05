@@ -18,14 +18,15 @@
         <p class="navbar-brand"><a href="<?= base_url('landingpage')?>" class="text-black text-decoration-none">Employee Portal</a>|Skills</p>
     </div>
     </nav>
-    <div class="container mt-4">
+    <div class="container mt-2">
         <div class="p20">
         <div class="row">
         <div class="col-md-8 col-sm-12 mx-auto">
-            <div class="card mt-2">
+            <div class="card">
                     <div class="card-body">
-    <h3>Update Employee Details</h3>
+    <h3>Update Skills</h3>
     <form method="post" action="<?= base_url('skillupdate') ?>">
+        <input type="hidden" name="id" value="<?= session()->get('user_id'); ?>">
         <div class="mb-2">
             <label>Computer Skills</label>
             <input type="text" name="computerskills" class="form-control" value="<?= esc($skill['computerskills'])?>">

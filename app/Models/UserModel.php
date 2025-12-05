@@ -22,7 +22,8 @@ class UserModel extends Model
         'qualification',
         'computerskills',
         'experience',
-        'otherskills'
+        'otherskills',
+        'reg_date'
     ];
     function insertTable($users, $data = array())
     {
